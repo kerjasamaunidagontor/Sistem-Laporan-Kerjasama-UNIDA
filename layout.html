@@ -139,14 +139,6 @@
           📄 Kerjasama
         </a>
 
-        <a
-          data-admin
-          onclick="loadPage('kegiatan')"
-          class="menu-link flex p-3 rounded hover:bg-purple-800/40 transition"
-        >
-          📅 Kegiatan
-        </a>
-
         <!-- INPUT KEGIATAN -->
         <div class="relative group">
           <div
@@ -157,10 +149,17 @@
 
           <div class="hidden group-hover:block ml-4 mt-1 space-y-1">
             <a
-              onclick="loadPage('input-laporan')"
+              onclick="loadPage('kegiatan')"
+              class="menu-link flex p-3 rounded hover:bg-purple-800/40 transition"
+            >
+              📅 Kegiatan
+            </a>
+
+            <a
+              onclick="loadPage('laporan-kegiatan')"
               class="menu-link flex p-2 rounded hover:bg-purple-800/40 transition"
             >
-              📝 Input Laporan
+              📝 Laporan Kegiatan
             </a>
 
             <a
@@ -196,6 +195,7 @@
             </a>
 
             <a
+              data-admin
               onclick="loadPage('nilai-iku')"
               class="menu-link flex p-2 rounded hover:bg-purple-800/40 transition"
             >
@@ -203,6 +203,7 @@
             </a>
 
             <a
+              data-admin
               onclick="loadPage('bentuk-kegiatan')"
               class="menu-link flex p-2 rounded hover:bg-purple-800/40 transition"
             >
@@ -210,6 +211,7 @@
             </a>
 
             <a
+              data-admin
               onclick="loadPage('jenis-mitra')"
               class="menu-link flex p-2 rounded hover:bg-purple-800/40 transition"
             >
@@ -217,6 +219,7 @@
             </a>
 
             <a
+              data-admin
               onclick="loadPage('tambah-mitra')"
               class="menu-link flex p-2 rounded hover:bg-purple-800/40 transition"
             >
@@ -224,6 +227,7 @@
             </a>
 
             <a
+              data-admin
               onclick="loadPage('pendanaan')"
               class="menu-link flex p-2 rounded hover:bg-purple-800/40 transition"
             >
@@ -231,6 +235,7 @@
             </a>
 
             <a
+              data-admin
               onclick="loadPage('prodi-satker')"
               class="menu-link flex p-2 rounded hover:bg-purple-800/40 transition"
             >
@@ -238,6 +243,7 @@
             </a>
 
             <a
+              data-admin
               onclick="loadPage('fakultas-satker')"
               class="menu-link flex p-2 rounded hover:bg-purple-800/40 transition"
             >
@@ -355,7 +361,9 @@
 
     <script src="assets/js/analitik-geo.js"></script>
     <script src="assets/js/mitra.js"></script>
-
+    <script src="assets/js/laporan-kegiatan.js"></script>
+    <script src="assets/js/rekap-laporan.js"></script>
+    <script src="assets/js/cek-laporan.js"></script>
     <script src="assets/js/bentuk-kegiatan.js"></script>
 
     <script src="assets/js/nilai-iku.js"></script>
